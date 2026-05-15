@@ -1,0 +1,26 @@
+:root{
+    --Amarelo:#F2AB27;
+
+    --Azul: #073359;
+
+    --AzulC:#048ABF;
+
+    --Branco:#F2F2F2;
+
+    --Preto:#000000;
+
+    --Verde:#0D8C44;
+
+}
+
+html, body{
+    margin: 0;
+    border:0;
+    padding: 0;
+    background-color: var(--Azul);
+}
+
+header, footer{
+    background-color: var(--AzulC);
+}
+
