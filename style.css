@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 :root{
     --Amarelo:#F2AB27;
 
@@ -11,19 +12,61 @@
 
     --Verde:#0D8C44;
 
+    --Cinza:#204858;
+
+} 
+
+*{
+    font-family: "Limelight";
 }
 
-html, body{
+html, body, .conteiner-fluid{
     margin: 0;
     border:0;
     padding: 0;
     background-color: var(--Azul);
+   
 }
 
-header, footer{
+header,footer{
+    margin: 0;
     background-color: var(--AzulC);
 }
 
-#logo{
-    width:100px;
+#Menu{
+    padding-top: 1.7%;
+    text-align: center;
+    align-items: center;
+}
+
+.menuTitulos{
+    color: var(--Branco);
+}
+
+.Titulos,.card-title, .card-body h5, .subtitulos{
+    text-align: center;
+    color:var(--Amarelo);
+}
+
+.card{
+    width: 18rem;
+}
+
+.card-body{
+    background-color: var(--Cinza);
+}
+.card-text, .card-body p{
+    color:var(--Verde);
+}
+
+
+.bg-blue-light{
+    background-color: var(--AzulC);
+}
+
+@media(max-width:800px){
+    #Menu{
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
 }
