@@ -38,6 +38,7 @@ header,footer{
     text-align: center;
     align-items: center;
     font-size: larger;
+    display: inline;
 }
 
 .menuTitulos{
@@ -70,7 +71,12 @@ header,footer{
 
 @media(max-width:800px){
     #Menu{
-    padding-left: 10%;
+        padding-top: 1.7%;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        font-size: larger;
+        display: inline;
     }
     #Imagem-logo img{
         padding-left:200px;
