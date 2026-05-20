@@ -25,7 +25,6 @@ html, body, .conteiner-fluid{
     border:0;
     padding: 0;
     background-color: var(--Azul);
-   
 }
 
 header,footer{
@@ -35,12 +34,17 @@ header,footer{
 
 #Menu{
     padding-top: 1.7%;
+    padding-left: 50%;
     text-align: center;
     align-items: center;
+    font-size: larger;
 }
 
 .menuTitulos{
     color: var(--Branco);
+}
+.menuTitulos:hover{
+    color: var(--Amarelo);
 }
 
 .Titulos,.card-title, .card-body h5, .subtitulos{
@@ -66,7 +70,10 @@ header,footer{
 
 @media(max-width:800px){
     #Menu{
-        padding-left: 15px;
-        padding-bottom: 10px;
+    padding-left: 10%;
+    }
+    #Imagem-logo img{
+        padding-left:200px;
+        width: 200px;
     }
 }
