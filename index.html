@@ -1,128 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
-      <title>ANVIAGENSA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+    defer></script>
+  <title>ANVIAGENSA</title>
 </head>
+
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg p-1" style="background-color: #048ABF;">
-        <div class="container-md">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col-6">
-              <a  id="Imagem-logo"  class="navbar-brand d-flex justify-content-center" href="#">
-                <img src="https://github.com/AnaBeatrizCorrea/Anviagensa/blob/main/imagens/white-removebg-preview.png?raw=true" alt="" width="300px">
-              </a>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg p-1" style="background-color: #F2AB27;">
+      <div id="navbar-conteiner" class="container-md">
+        <div id="navbar-row" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div id="logo" class="col-6">
+            <a id="Imagem-logo" class="navbar-brand d-flex justify-content-center" href="#">
+              <img
+                src="https://github.com/AnaBeatrizCorrea/Anviagensa/blob/main/imagens/white-removebg-preview.png?raw=true"
+                alt="" width="300px">
+            </a>
+          </div>
 
-            <div id="Menu" class="col-6 d-flex justify-content-center">
-                
-                    <a class="navbar-brand d-flex justify-content-center" href="#Pacotes">
-                    <h5 class="menuTitulos" >Pacotes</h5>
-                    </a>
-                  <a class="navbar-brand d-flex justify-content-center" href="#Adicionais">
-                  <h5 class="menuTitulos" >Adicionais</h5>
-                  </a>
-                  <a class="navbar-brand d-flex justify-content-center" href="#Valores">
-                  <h5 class="menuTitulos" >Valores</h5>
-                  </a>
-            </div>
-      </div>
+          <div id="Menu" class="col-6 d-flex justify-content-center">
+
+            <a class="navbar-brand d-flex justify-content-center" href="#Pacotes">
+              <h5 class="menuTitulos">Viagens</h5>
+            </a>
+            <a class="navbar-brand d-flex justify-content-center" href="#Adicionais">
+              <h5 class="menuTitulos">Planejar</h5>
+            </a>
+            <a class="navbar-brand d-flex justify-content-center" href="#Valores">
+              <h5 class="menuTitulos">Valores</h5>
+            </a>
+          </div>
         </div>
+      </div>
+    </nav>
+  </header>
+  <div id="pacotes">
+    <section id="section-titulo-pacotes">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center p-3" style="background-color: #073359;">
+        <h2 class="Titulos"> Viagens</h1>
       </nav>
-    </header>
-    <div id="pacotes">
-      <section>
-          <nav class="navbar navbar-expand-lg d-flex justify-content-center p-3" style="background-color: #073359;">
-            <h2 class="Titulos" > Pacotes Disponíveis</h1>
-          </nav>  
     </section>
-      <div class="conteiner-fluid" >
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 h-100">
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-                <img class="card-img-top"  src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg" alt="">
-                <div class="card-body">
-                  <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                  <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país</p>
-                </div>
-              </div>
+    <section class="conteiner-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 h-100">
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país</p>
+            </div>
           </div>
+        </article>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-                <img class="card-img-top"  src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg" alt="">
-                <div class="card-body">
-                  <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                  <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país</p>
-                </div>
-              </div>
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país</p>
+            </div>
           </div>
+        </article>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-                <img class="card-img-top"  src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg" alt="">
-                <div class="card-body">
-                  <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                  <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país</p>
-                </div>
-              </div>
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país</p>
+            </div>
           </div>
+        </article>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-                <img class="card-img-top"  src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg" alt="">
-                <div class="card-body">
-                  <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                  <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país</p>
-                </div>
-              </div>
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país</p>
+            </div>
           </div>
+        </article>
 
-                    <div class="col d-flex justify-content-center">
-                      <div class="card">
-                        <img class="card-img-top"
-                          src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
-                          alt="">
-                        <div class="card-body">
-                          <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                          <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col d-flex justify-content-center">
-                      <div class="card">
-                        <img class="card-img-top"
-                          src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
-                          alt="">
-                        <div class="card-body">
-                          <h5 class="card-title subtitulos">Floresta Amazônica</h5>
-                          <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do nosso país
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país
+              </p>
+            </div>
           </div>
+        </article>
 
-      </div> 
-    </div>
-    <div id="Adicionais">
-      <div class="conteiner-fluid">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3"> 
-            <form method="get">
-              <section class="compra">ESCOLHA SEU PACOTE</section>
-              <label class="d-none d-md-inline" for="Adicionais">aDICIONAIS</label>
-            </form>
-        </div>
+        <article class="col d-flex justify-content-center">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://s2-casavogue.glbimg.com/qbK-sF1r6N2hm8rUiQhRg9w4kfQ=/0x0:2113x1419/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/Y/O/ccc6EFS4a382ISDKgpjg/01-as-paisagens-naturais-mais-lindas-do-brasil-floresta-amazonica2-min.jpg"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title subtitulos">Floresta Amazônica</h5>
+              <p class="card-text texto-cards">Conheça uma das mais belas floresta, o pulmão do mundo e o coração do
+                nosso país
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
+
+    </section>
+  </div>
+  <div id="Adicionais">
+    <div class="conteiner-fluid">
+      <section>
+        <nav id="Titulo-planeja" class="navbar navbar-expand-lg d-flex justify-content-center p-3">
+          <h2 class="Titulos"> Planejando Sua Viagem dos Sonhos</h1>
+        </nav>
+      </section>
+      <form method="get">
+        <div class="form-row">
+          <div class="col-6">
+            <section id="destino" class="col row row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <article id="titulo-coluna-form">
+                <h3> Destinos</h3>
+              </article>
+              <div id="coluna-destino">
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Floresta">
+                  <p>Floresta Amazônica</p>
+                </article>
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Lencois">
+                  <p>Lençoís Maranhenses</p>
+                </article>
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Pantanal">
+                  <p>Pantanal</p>
+                </article>
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Cataratas">
+                  <p>Cataratas</p>
+                </article>
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Chapada">
+                  <p>Chapada</p>
+                </article>
+                <article class="LocalDestino">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Bonito">
+                  <p>Bonito</p>
+                </article>
+              </div>
+            </section>
+          </div>
+          <div class="col-6">
+            <section id="adicional" class="col row row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <article id="titulo-adicionais-form">
+                <h3>Adicionais</h3>
+              </article>
+              <div id="coluna-destino">
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Floresta">
+                  <p>Floresta Amazônica</p>
+                </article>
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Lencois">
+                  <p>Lençoís Maranhenses</p>
+                </article>
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Pantanal">
+                  <p>Pantanal</p>
+                </article>
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Cataratas">
+                  <p>Cataratas</p>
+                </article>
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Chapada">
+                  <p>Chapada</p>
+                </article>
+                <article class="LocalAdicionais">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Bonito">
+                  <p>Bonito</p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 </body>
+
 </html>
