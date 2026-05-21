@@ -51,14 +51,9 @@
     --Cinza: #204858;
 
 }
-
-<<<<<<< Updated upstream
 * {
-    font-family: "Limelight";
-=======
-*{
         font-family: "Limelight";
->>>>>>> Stashed changes
+
 }
 
 html,
@@ -76,13 +71,12 @@ footer {
     background-color: var(--AzulC);
 }
 
-<<<<<<< Updated upstream
 
 #Menu {
     padding-top: 1.7%;
     padding-left: 50%;
     text-align: center;
-=======
+}
 #navegacao{
     display: flex;
     flex-wrap: wrap;
@@ -95,14 +89,13 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-around;
->>>>>>> Stashed changes
     align-items: center;
 }
 
-<<<<<<< Updated upstream
+
 .menuTitulos {
     color: var(--Azul);
-=======
+}
 .navbar-items{
     text-decoration: none;
     justify-content: center;
@@ -113,7 +106,6 @@ footer {
 }
 .menuTitulos:hover{
     color: var(--Amarelo);
->>>>>>> Stashed changes
 }
 
 .menuTitulos:hover {
@@ -189,7 +181,6 @@ form {
     background-color: var(--AzulC);
 }
 
-<<<<<<< Updated upstream
 #section-titulo-pacotes {
     background-color: var(--Cinza);
 }
@@ -205,4 +196,3 @@ body, #navegacao{
 
 }
 }
->>>>>>> Stashed changes
