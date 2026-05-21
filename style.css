@@ -51,9 +51,9 @@
     --Cinza: #204858;
 
 }
-* {
-        font-family: "Limelight";
 
+* {
+    font-family: "Limelight";
 }
 
 html,
@@ -76,36 +76,13 @@ footer {
     padding-top: 1.7%;
     padding-left: 50%;
     text-align: center;
-}
-#navegacao{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    align-content: center;
+    font-size: larger;
+    display: inline;
 }
-#Menu{
-    display: inline-flex !important;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    align-items: center;
-}
-
 
 .menuTitulos {
     color: var(--Azul);
-}
-.navbar-items{
-    text-decoration: none;
-    justify-content: center;
-    display:flex;
-}
-.menuTitulos{
-    color: var(--Branco);
-}
-.menuTitulos:hover{
-    color: var(--Amarelo);
 }
 
 .menuTitulos:hover {
@@ -183,15 +160,4 @@ form {
 
 #section-titulo-pacotes {
     background-color: var(--Cinza);
-}
-@media(max-width:800px){
-body, #navegacao{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-
-}
 }
