@@ -54,6 +54,10 @@
 
 * {
     font-family: "Limelight";
+=======
+*{
+        font-family: "Limelight";
+>>>>>>> Stashed changes
 }
 
 html,
@@ -71,18 +75,44 @@ footer {
     background-color: var(--AzulC);
 }
 
+<<<<<<< Updated upstream
 
 #Menu {
     padding-top: 1.7%;
     padding-left: 50%;
     text-align: center;
+=======
+#navegacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    font-size: larger;
-    display: inline;
+    align-content: center;
+}
+#Menu{
+    display: inline-flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+>>>>>>> Stashed changes
+    align-items: center;
 }
 
+<<<<<<< Updated upstream
 .menuTitulos {
     color: var(--Azul);
+=======
+.navbar-items{
+    text-decoration: none;
+    justify-content: center;
+    display:flex;
+}
+.menuTitulos{
+    color: var(--Branco);
+}
+.menuTitulos:hover{
+    color: var(--Amarelo);
+>>>>>>> Stashed changes
 }
 
 .menuTitulos:hover {
@@ -158,6 +188,20 @@ form {
     background-color: var(--AzulC);
 }
 
+<<<<<<< Updated upstream
 #section-titulo-pacotes {
     background-color: var(--Cinza);
 }
+=======
+@media(max-width:800px){
+body, #navegacao{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+}
+>>>>>>> Stashed changes
