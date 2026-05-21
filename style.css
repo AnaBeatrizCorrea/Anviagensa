@@ -184,7 +184,6 @@ form {
 #section-titulo-pacotes {
     background-color: var(--Cinza);
 }
-=======
 @media(max-width:800px){
 body, #navegacao{
     display: flex;
