@@ -2,7 +2,7 @@
 
 @media(max-width:1300px) {
     body{
-margin: 5%;
+        margin: 20%;
     }
     #navbar-conteiner {
         justify-content: center;
@@ -22,6 +22,10 @@ margin: 5%;
 
     label {
         display: none;
+    }
+
+    .menuTitulos{
+        size:10px;
     }
 }
 
@@ -163,4 +167,8 @@ form {
 
 #section-titulo-pacotes {
     background-color: var(--Cinza);
+}
+h3{
+    display: flex; 
+    justify-content: center;
 }
