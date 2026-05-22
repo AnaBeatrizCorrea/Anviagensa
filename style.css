@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 @media(max-width:1300px) {
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: var(--Amarelo);
+    }
     #navbar-conteiner {
         justify-content: center;
         text-size-adjust: 150%;
