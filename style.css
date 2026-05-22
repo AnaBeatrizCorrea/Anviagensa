@@ -2,9 +2,7 @@
 
 @media(max-width:1300px) {
     body{
-        display: flex;
-        justify-content: center;
-        background-color: var(--Amarelo);
+margin: 5%;
     }
     #navbar-conteiner {
         justify-content: center;
