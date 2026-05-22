@@ -3,6 +3,7 @@
 @media(max-width:1300px) {
     #navbar-conteiner {
         justify-content: center;
+        text-size-adjust: 150%;
     }
 
     #navbar-row {
