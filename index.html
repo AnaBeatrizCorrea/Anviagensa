@@ -42,7 +42,7 @@
       </div>
     </nav>
   </header>
-  <div id="pacotes">
+  <div id="Pacotes">
     <section id="section-titulo-pacotes">
       <nav class="navbar navbar-expand-lg d-flex justify-content-center p-3" style="background-color: #073359;">
         <h2 class="Titulos"> Viagens</h2>
@@ -133,9 +133,21 @@
 
     </section>
   </div>
+  <div id="Valores">
+    <section id="section-titulo-valores">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center p-3" style="background-color: #073359;">
+        <h2 class="Titulos"> Valores</h2>
+      </nav>
+      <article id="tabela-valores">
+        <img id="tabela"
+          src="C:\Users\ana.beatriz\Downloads\Ana-20260506T173928Z-3-001\Ana\ESTUDOS\agÊncia de viagens\imagens\tabela.png"
+          alt="">
+      </article>
+    </section>
+  </div>
   <div id="Adicionais">
     <div class="conteiner-fluid">
-      <section>
+      <section id="section-titulo-adicionais">
         <nav id="Titulo-planeja" class="navbar navbar-expand-lg d-flex justify-content-center p-3">
           <h2 class="Titulos"> Planejando Sua Viagem dos Sonhos</h2>
         </nav>
@@ -149,27 +161,30 @@
               </article>
               <div id="coluna-destino">
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Floresta">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Floresta"
+                    value="2800">
                   <p>Floresta Amazônica</p>
                 </article>
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Lencois">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Lencois" value="2200">
                   <p>Lençoís Maranhenses</p>
                 </article>
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Pantanal">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Pantanal"
+                    value="2500">
                   <p>Pantanal</p>
                 </article>
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Cataratas">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Cataratas"
+                    value="3000">
                   <p>Cataratas</p>
                 </article>
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Chapada">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Chapada" value="1800">
                   <p>Chapada</p>
                 </article>
                 <article class="LocalDestino">
-                  <input class="form-check-input position-static" type="radio" name="Destino" id="Bonito">
+                  <input class="form-check-input position-static" type="radio" name="Destino" id="Bonito" value="2100">
                   <p>Bonito</p>
                 </article>
               </div>
@@ -182,25 +197,40 @@
               </article>
               <div id="coluna-adicionais">
                 <article class="LocalAdicionais">
-                  <input class="form-check-input position-static" type="checkbox" name="Destino" id="Floresta">
+                  <input class="form-check-input position-static" type="checkbox" name="Adicionais" id="Refeicoes"
+                    value="450">
                   <p>Todas as refeições (Pacote padrão incluirá somente café)</p>
                 </article>
                 <article class="LocalAdicionais">
-                  <input class="form-check-input position-static" type="checkbox" name="Destino" id="Lencois">
+                  <input class="form-check-input position-static" type="checkbox" name="Adicionais" id="Guia"
+                    value="300">
                   <p>Guia Turistícos</p>
                 </article>
                 <article class="LocalAdicionais">
-                  <input class="form-check-input position-static" type="checkbox" name="Destino" id="Pantanal">
+                  <input class="form-check-input position-static" type="checkbox" name="Adicionais" id="Cesta"
+                    value="180">
                   <p>Cesta Cultural (Comidas tipicas e lembrancinhas tradicionais)</p>
                 </article>
                 <article class="LocalAdicionais">
-                  <input class="form-check-input position-static" type="checkbox" name="Destino" id="Cataratas">
+                  <input class="form-check-input position-static" type="checkbox" name="Adicionais" id="Festa"
+                    value="250">
                   <p>Festa no Salão</p>
                 </article>
               </div>
             </section>
           </div>
         </div>
+        <div id="submeter">
+          <article id="cupons-desconto">
+            <label id="label-cupom" for="cupom">Cupom de desconto: </label>
+            <input type="text" name="cupom" id="cupom" placeholder="  Cupom de Desconto">
+          </article>
+          <article id="botoes">
+            <button class="btn" id="Calcular" type="submit">Calcular Valores</button>
+            <button id="Imprimir" class="btn" type="submit">Imprimir Pedidos</button>
+          </article>
+        </div>
+
       </form>
     </div>
   </div>

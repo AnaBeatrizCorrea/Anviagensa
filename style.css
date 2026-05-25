@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 @media(max-width:1300px) {
-    body{
+    body {
         margin: 20%;
     }
+
     #navbar-conteiner {
         justify-content: center;
         text-size-adjust: 150%;
@@ -20,17 +21,21 @@
         margin-right: 25%;
     }
 
-    label {
-        display: none;
+    .menuTitulos {
+        font-size: 0.8rem;
     }
+}
 
-    .menuTitulos{
-        size:50%;
+@media(max-width:800px) {
+
+    label,
+    #label-cupom {
+        display: none;
     }
 }
 
 @media(min-width:1000px) {
-    #nabar-conteiner {
+    #navbar-conteiner {
         width: 1000px;
         padding: 0px;
         margin: 0px;
@@ -40,12 +45,20 @@
         gap: 100px;
         text-size-adjust: 200%;
     }
+
+    .menuTitulos {
+        font-size: 1.5rem;
+    }
+
+    placeholder {
+        display: none;
+    }
 }
 
 :root {
-    --Amarelo: #F2AB27;
+    --Amarelo: rgb(242, 171, 39);
 
-    --Azul: #073359;
+    --Azul: rgb(7, 51, 89);
 
     --AzulC: #048ABF;
 
@@ -61,15 +74,7 @@
 
 * {
     font-family: "Limelight";
-}
-
-html,
-body,
-.conteiner-fluid {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background-color: var(--Azul);
+    --bs-form-check-bg: var(--Verde);
 }
 
 header,
@@ -78,6 +83,16 @@ footer {
     background-color: var(--AzulC);
 }
 
+html,
+body,
+.conteiner-fluid {
+    background-color: var(--Azul);
+
+}
+
+h4 {
+    font-size: 1rem;
+}
 
 #Menu {
     padding-top: 1.7%;
@@ -144,8 +159,12 @@ footer {
     flex-direction: column;
 }
 
-.LocalDestino {
-    display: block;
+.LocalDestino,
+.LocalAdicionais {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+    width: 150%;
 }
 
 form {
@@ -154,6 +173,7 @@ form {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    color: var(--Amarelo);
 }
 
 .form-row {
@@ -168,7 +188,71 @@ form {
 #section-titulo-pacotes {
     background-color: var(--Cinza);
 }
-h3{
-    display: flex; 
+
+.form-row h3 {
+    display: flex;
     justify-content: center;
+    margin-left: 150%;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+#coluna-destino,
+#coluna-adicionais {
+    display: block;
+    width: 50%;
+
+}
+
+#cupom {
+    margin: 10%;
+    padding: 1%;
+    display: flex;
+    width: 50%;
+}
+
+#submeter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#cupons-desconto {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#botoes {
+    display: flex;
+
+}
+
+#tabela-valores {
+    background-color: var(--Azul);
+    display: flex;
+    justify-content: center;
+}
+
+#tabela {
+    border-radius: 10%;
+    padding: 5%;
+    width: 90%;
+}
+
+#Calcular,
+#Imprimir {
+    color: var(--Branco);
+    background-color: var(--AzulC);
+}
+
+#Calcular:hover,
+#Imprimir:hover {
+    color: var(--Amarelo);
 }
