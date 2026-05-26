@@ -205,7 +205,7 @@ form {
 
 }
 
-#cupom {
+#cupom, #Nome {
     margin: 10%;
     padding: 1%;
     display: flex;
@@ -219,7 +219,7 @@ form {
     flex-wrap: wrap;
 }
 
-#cupons-desconto {
+#cupons-desconto, #Cliente {
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
