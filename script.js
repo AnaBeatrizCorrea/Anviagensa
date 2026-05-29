@@ -1,4 +1,5 @@
-
+let btnCalcular = document.getElementById(Calcular);
+btnCalcular.addEventListener('click', clique);
 function clique(){
 
     let destino=[Number(document.getElementById("Floresta").value),
@@ -27,16 +28,13 @@ function clique(){
     for(let i = 0; i<= 5; i++){
         if(destino[i]){
             let valorNumerico=destino[i];
-            alert("O valor do destino selecionado é: " + valorNumerico);
             break; 
         }
     }
     
     for(let indC = 0; indC<= 3; indC++){
         if(adicionais[indC]){
-            let valorNumerico_Adicionais =adicionais[indC];
-            alert("O valor do destino selecionado é: " + valorNumerico_Adicionais);
-            
+            let valorNumerico_Adicionais =adicionais[indC];           
         }
     }
 
