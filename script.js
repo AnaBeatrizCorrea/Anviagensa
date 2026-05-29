@@ -67,16 +67,16 @@
         }
         Valor_Total_Desc = Valor_Total - ValorDesc;
 
-        p_nome.innerText = "Nome do Cliente: " + NomeC;
-        p_valorT.innerText = "O Valor Total foi de: " + Valor_Total;
+        p_nome.innerHTML = "Nome do Cliente: " + NomeC;
+        p_valorT.innerHTML = "O Valor Total foi de: " + Valor_Total;
 
         if (contador == 3) {
-        p_cupomU.innerText = "O Cupom Usado foi:" + Cupom_usado + ", cupom inválido."  
+        p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado + ", cupom inválido."  
         }
 
-        p_cupomU.innerText = "O Cupom Usado foi:" + Cupom_usado;
-        p_valorD.innerText =  "O Valor de desconto é: " + ValorDesc;
-        p_valorP.innerText =  "O Valor a Pagar é: " + Valor_Total_Desc;
-
+        p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado;
+        p_valorD.innerHTML =  "O Valor de desconto é: " + ValorDesc;
+        p_valorP.innerHTML  =  "O Valor a Pagar é: " + Valor_Total_Desc;
+        
     }         
 

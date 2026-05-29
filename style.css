@@ -162,7 +162,7 @@ h4 {
 .LocalDestino,
 .LocalAdicionais {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 5%;
     width: 150%;
     padding-left: 0px;
