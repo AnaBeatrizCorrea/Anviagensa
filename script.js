@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
     //botao e entrada de funçao
     let btnCalcular = document.getElementById(Calcular);
         btnCalcular.addEventListener('click', clique);
@@ -11,6 +12,17 @@
         Number(document.getElementById("Chapada").value),
         Number(document.getElementById("Bonito").value)
         ];
+=======
+function clique(){
+
+    let destino=[Number(document.getElementById("Floresta").value),
+    Number(document.getElementById("Lencois").value),
+    Number(document.getElementById("Pantanal").value),
+    Number(document.getElementById("Cataratas").value),
+    Number(document.getElementById("Chapada").value),
+    Number(document.getElementById("Bonito").value)
+    ];
+>>>>>>> Stashed changes
 
     let adicionais=[Number(document.getElementById("Refeicoes").value),
     Number(document.getElementById("Guia").value),
@@ -70,3 +82,4 @@
 
     }         
 
+}
