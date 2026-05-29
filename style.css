@@ -50,7 +50,7 @@
         font-size: 1.5rem;
     }
 
-    placeholder {
+    input::placeholder {
         display: none;
     }
 }
@@ -162,7 +162,7 @@ h4 {
 .LocalDestino,
 .LocalAdicionais {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 5%;
     width: 150%;
     padding-left: 0px;
