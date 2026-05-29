@@ -31,7 +31,6 @@ function clique(){
     ];
 
     let NomeC= document.getElementById("Nome").value;
-    let Cupom_usado;
     const Cupom_usado= document.getElementById("cupom").value;
     let Cupons=["BRASIL20", "CUPONZ10", "MPBE10", "ULTIMO05"];
     let Possui_Desconto;
@@ -39,22 +38,16 @@ function clique(){
     let ValorDesc;
     let Valor_Total;
     let Valor_Total_Desc;
-
     let valorNumerico_Adicionais = 0;
     for(let i = 0; i<= 5; i++){
         if(destino[i]){
             let valorNumerico=destino[i];
-            alert("O valor do destino selecionado é: " + valorNumerico);
             document.getElementById("Valor-Total").innerHTML = "O valor da viagem selecionada é: " + valorNumerico;
             break; 
         }
     }
     
     for(let indC = 0; indC<= 3; indC++){
-        if(adicionais[indC]){
-            let valorNumerico_Adicionais =adicionais[indC];
-            alert("O valor do destino selecionado é: " + valorNumerico_Adicionais);
-            
         if (adicionais[indC]) {     
             valorNumerico_Adicionais+=adicionais[indC];
 
@@ -70,16 +63,15 @@ function clique(){
         }
     }
     
-    "Valor-Total"
-    "Cupom-usado"
-    "Valor-Desconto"         
-    "Valor-Pagar"
     document.getElementById("Valor-Total").innerHTML = "O valor da viagem selecionada é: " + Valor_Total;
     document.getElementById("Cupom-usado").innerHTML = "O cupom utilizado é: " + Cupom_usado;
     document.getElementById("Valor-Desconto").innerHTML = "O valor do desconto é: " + ValorDesc;
     document.getElementById("Valor-Pagar").innerHTML = "O valor a pagar é: " + Valor_Total_Desc;
     document.getElementById("Valor-Adicionais").innerHTML = "O valor dos adicionais selecionados é: " + Valor_Total_Adicionais;
 
+<<<<<<< Updated upstream
     }         
 
+=======
 }
+>>>>>>> Stashed changes
