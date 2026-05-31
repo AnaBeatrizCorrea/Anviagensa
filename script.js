@@ -54,7 +54,7 @@
         }
 
         Valor_Total = Valor_Destino + Valor_Adicionais; 
-        if(Cupom_usado !=null)
+        if(Cupom_usado !=" ")
         for(let indCC= 0; indCC <= 3; indCC++){
             if (Cupons[indCC]==Cupom_usado) {
                 Possui_Desconto=Descontos[indCC];
