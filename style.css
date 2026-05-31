@@ -264,3 +264,9 @@ form {
     display: flex;
     justify-content: center;
 }
+#notinha{
+    color:var(--Preto);
+    background-color: var(--Branco);
+    display: inline-flex;
+    justify-content: center;
+}
