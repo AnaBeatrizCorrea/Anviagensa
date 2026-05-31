@@ -4,18 +4,18 @@
     
     function clique(){
 
-        let destino=[Number(document.getElementById("Floresta").value),
-        Number(document.getElementById("Lencois").value),
-        Number(document.getElementById("Pantanal").value),
-        Number(document.getElementById("Cataratas").value),
-        Number(document.getElementById("Chapada").value),
-        Number(document.getElementById("Bonito").value)
+        let destino=[document.getElementById("Floresta"),
+        document.getElementById("Lencois"),
+        document.getElementById("Pantanal"),
+        document.getElementById("Cataratas"),
+        document.getElementById("Chapada"),
+        document.getElementById("Bonito")
         ];
 
-        let adicionais=[Number(document.getElementById("Refeicoes").value),
-        Number(document.getElementById("Guia").value),
-        Number(document.getElementById("Cesta").value),
-        Number(document.getElementById("Festa").value)        
+        let adicionais=[document.getElementById("Refeicoes"),
+        document.getElementById("Guia"),
+        document.getElementById("Cesta"),
+        document.getElementById("Festa")        
         ];
 
         // entradas
@@ -42,14 +42,14 @@
         
         for(let i = 0; i<= 5; i++){
             if(destino[i].checked){
-                Valor_Destino=destino[i];
+                Valor_Destino = Number( destino[i].value);
                 break; 
             }
         }
         
         for(let indC = 0; indC<= 3; indC++){
             if(adicionais[indC].checked){
-                Valor_Adicionais =adicionais[indC];           
+                Valor_Adicionais +=Number(adicionais[indC].value);           
             }
         }
 
@@ -70,10 +70,10 @@
         p_valorT.innerHTML = "O Valor Total foi de: " + Valor_Total;
 
         if (contador == 3) {
-        p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado + ", cupom inválido."  
+            p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado + ", cupom inválido."
+        } else {
+            p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado;
         }
-
-        p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado;
         p_valorD.innerHTML =  "O Valor de desconto é: " + ValorDesc;
         p_valorP.innerHTML  =  "O Valor a Pagar é: " + Valor_Total_Desc;
         
