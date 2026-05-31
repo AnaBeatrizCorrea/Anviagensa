@@ -1,5 +1,5 @@
     //botao e entrada de funçao
-    let btnCalcular = document.getElementById(Calcular);
+    let btnCalcular = document.getElementById("Calcular");
         btnCalcular.addEventListener('click', clique);
     
     function clique(){
@@ -34,11 +34,11 @@
 
         // saidas
 
-        let p_nome = document.getElementById(Nome-Cliente);
-        let p_valorT = document.getElementById(Valor-Total);
-        let p_cupomU = document.getElementById(Cupom-usado);
-        let p_valorD= document.getElementById(Valor-Desconto);       
-        let p_valorP= document.getElementById(Valor-Pagar);
+        let p_nome = document.getElementById("Nome-Cliente");
+        let p_valorT = document.getElementById("Valor-Total");
+        let p_cupomU = document.getElementById("Cupom-usado");
+        let p_valorD= document.getElementById("Valor-Desconto");       
+        let p_valorP= document.getElementById("Valor-Pagar");
         
         for(let i = 0; i<= 5; i++){
             if(destino[i]){
