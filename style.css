@@ -259,3 +259,8 @@ form {
 #Imprimir:hover {
     color: var(--Amarelo);
 }
+
+#botoes{
+    display: flex;
+    justify-content: center;
+}
