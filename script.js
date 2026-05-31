@@ -54,28 +54,30 @@
         }
 
         Valor_Total = Valor_Destino + Valor_Adicionais; 
-        if(Cupom_usado !=" ")
-        for(let indCC= 0; indCC <= 3; indCC++){
-            if (Cupons[indCC]==Cupom_usado) {
-                Possui_Desconto=Descontos[indCC];
-                ValorDesc = (Number(Possui_Desconto)) * Valor_Total;
-                break;
-            } else {
-                contador++;
+        
+        if(Cupom_usado !="") {
+            for(let indCC= 0; indCC <= 3; indCC++){
+                if (Cupons[indCC]==Cupom_usado) {
+                    Possui_Desconto=Descontos[indCC];
+                    ValorDesc = (Number(Possui_Desconto)) * Valor_Total;
+                    break;
+                } else {
+                    contador++;
+                }
             }
         }
+        
         Valor_Total_Desc = Valor_Total - ValorDesc;
 
         p_nome.innerHTML = "Nome do Cliente: " + NomeC;
         p_valorT.innerHTML = "O Valor Total foi de: " + Valor_Total;
 
         if (contador == 3) {
-            p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado + ", cupom inválido."
+            p_cupomU.innerHTML = "O Cupom Usado foi: " + Cupom_usado + ", cupom inválido."
         } else {
-            p_cupomU.innerHTML = "O Cupom Usado foi:" + Cupom_usado;
+            p_cupomU.innerHTML = "O Cupom Usado foi: " + Cupom_usado;
         }
         p_valorD.innerHTML =  "O Valor de desconto é: " + ValorDesc;
         p_valorP.innerHTML  =  "O Valor a Pagar é: " + Valor_Total_Desc;
         
-    }         
-
+    }
