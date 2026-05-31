@@ -21,7 +21,7 @@
         // entradas
 
         let NomeC= document.getElementById("Nome").value;
-        let Cupom_usado;
+        let Cupom_usado=document.getElementById("cupom").value;
         let Cupons=["BRASIL20", "CUPONZ10", "MPBE10", "ULTIMO05"];
         let Possui_Desconto;
         let Descontos=[0.2, 0.1, 0.1, 0.5];
@@ -41,23 +41,22 @@
         let p_valorP= document.getElementById("Valor-Pagar");
         
         for(let i = 0; i<= 5; i++){
-            if(destino[i]){
+            if(destino[i].checked){
                 Valor_Destino=destino[i];
                 break; 
             }
         }
         
         for(let indC = 0; indC<= 3; indC++){
-            if(adicionais[indC]){
+            if(adicionais[indC].checked){
                 Valor_Adicionais =adicionais[indC];           
             }
         }
 
         Valor_Total = Valor_Destino + Valor_Adicionais; 
-        
+        if(Cupom_usado !=null)
         for(let indCC= 0; indCC <= 3; indCC++){
-            if (Cupons[indCC]) {
-                Cupom_usado =Cupons[indCC];
+            if (Cupons[indCC]==Cupom_usado) {
                 Possui_Desconto=Descontos[indCC];
                 ValorDesc = (Number(Possui_Desconto)) * Valor_Total;
                 break;
