@@ -24,7 +24,7 @@
         let Cupom_usado=document.getElementById("cupom").value;
         let Cupons=["BRASIL20", "CUPONZ10", "MPBE10", "ULTIMO05"];
         let Possui_Desconto;
-        let Descontos=[0.2, 0.1, 0.1, 0.5];
+        let Descontos=[0.2, 0.1, 0.1, 0.05];
         let ValorDesc = 0;
         let Valor_Total=0;
         let Valor_Destino=0;
