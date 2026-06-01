@@ -54,9 +54,9 @@
         }
 
         Valor_Total = Valor_Destino + Valor_Adicionais; 
-        
+        //length mede o tamanho do array
         if(Cupom_usado !="") {
-            for(let indCC= 0; indCC <= 3; indCC++){
+            for(let indCC= 0; indCC < Cupons.length; indCC++){
                 if (Cupons[indCC]==Cupom_usado) {
                     Possui_Desconto=Descontos[indCC];
                     ValorDesc = (Number(Possui_Desconto)) * Valor_Total;
@@ -68,16 +68,16 @@
         }
         
         Valor_Total_Desc = Valor_Total - ValorDesc;
-
+ // .toFixed coloca um numero fixo de caracteres após a virgula
         p_nome.innerHTML = "Nome do Cliente: " + NomeC;
-        p_valorT.innerHTML = "O Valor Total foi de: " + Valor_Total;
+        p_valorT.innerHTML = "O Valor Total foi de: R$ " + Valor_Total.toFixed(2);
 
-        if (contador == 3) {
+        if (contador == Cupons.length) {
             p_cupomU.innerHTML = "O Cupom Usado foi: " + Cupom_usado + ", cupom inválido."
         } else {
             p_cupomU.innerHTML = "O Cupom Usado foi: " + Cupom_usado;
         }
-        p_valorD.innerHTML =  "O Valor de desconto é: " + ValorDesc;
-        p_valorP.innerHTML  =  "O Valor a Pagar é: " + Valor_Total_Desc;
+        p_valorD.innerHTML =  "O Valor de desconto é: R$ " + ValorDesc.toFixed(2);
+        p_valorP.innerHTML  =  "O Valor a Pagar é: R$ " + Valor_Total_Desc.toFixed(2);
         
     }
