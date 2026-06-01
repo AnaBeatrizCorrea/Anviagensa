@@ -115,3 +115,5 @@ function imprimir(notinha) {
     });
 
 }
+
+// INCORPOREI Codigo externo para transformar a notinha em uma imagem :)
