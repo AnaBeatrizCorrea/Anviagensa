@@ -1,7 +1,12 @@
     //botao e entrada de funçao
     let btnCalcular = document.getElementById("Calcular");
         btnCalcular.addEventListener('click', clique);
+    let btnImprime = document.getElementById("Imprimir");
+        btnImprime.addEventListener('click', imprimir);
     
+        const scriptHtml2Canvas = document.createElement('script');
+        scriptHtml2Canvas.src = 'https://cloudflare.com';
+        document.head.appendChild(scriptHtml2Canvas);
     function clique(){
 
         let destino=[document.getElementById("Floresta"),
@@ -83,5 +88,24 @@
     }
 
 function imprimir(notinha) {
-    notinha.print;
+
+// Configura a ação de clique do botão para capturar a div "notinha"
+    const elemento = document.getElementById('notinha');
+    
+    if (!elemento) {
+        alert('Erro: A div com o ID "notinha" não foi encontrada nesta página.');
+        return;
     }
+
+    // Executa o print apenas da div especificada
+    html2canvas(elemento, {
+        useCORS: true,
+        scale: 3 // Garante alta resolução do texto
+    }).then(canvas => {
+        const urlImagem = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.download = 'notinha.png';
+        link.href = urlImagem;
+        link.click();
+    });
+}
