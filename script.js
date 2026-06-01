@@ -5,7 +5,7 @@
         btnImprime.addEventListener('click', imprimir);
     
         const scriptHtml2Canvas = document.createElement('script');
-        scriptHtml2Canvas.src = 'https://cloudflare.com';
+        scriptHtml2Canvas.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
         document.head.appendChild(scriptHtml2Canvas);
     function clique(){
 
