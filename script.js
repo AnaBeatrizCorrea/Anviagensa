@@ -81,3 +81,7 @@
         p_valorP.innerHTML  =  "O Valor a Pagar é: R$ " + Valor_Total_Desc.toFixed(2);
         
     }
+
+function imprimir(notinha) {
+    notinha.print;
+    }
