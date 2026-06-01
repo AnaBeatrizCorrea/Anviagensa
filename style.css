@@ -225,7 +225,7 @@ form {
 #cupons-desconto, #Cliente {
     display: inline-flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
     align-content: center;
@@ -263,7 +263,8 @@ form {
 #botoes{
     display: flex;
     justify-content: center;
-    background-color: var(--Azul);
+    background-color: var(--Cinza);
+    padding: 1%;
 }
 #notinha{
     color:var(--Preto);
