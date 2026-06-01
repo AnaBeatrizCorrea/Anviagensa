@@ -96,11 +96,16 @@ function imprimir(notinha) {
         alert('Erro: A div com o ID "notinha" não foi encontrada nesta página.');
         return;
     }
+    // PROTEÇÃO: Verifica se o script externo já foi totalmente processado pelo navegador
+    if (typeof html2canvas === 'undefined') {
+        alert('A biblioteca ainda está carregando. Por favor, aguarde 2 segundos e tente novamente.');
+        return;
+    }
 
-    // Executa o print apenas da div especificada
+    // Executa a captura da div "notinha" em alta definição
     html2canvas(elemento, {
         useCORS: true,
-        scale: 3 // Garante alta resolução do texto
+        scale: 3
     }).then(canvas => {
         const urlImagem = canvas.toDataURL('image/png');
         const link = document.createElement('a');
@@ -108,4 +113,5 @@ function imprimir(notinha) {
         link.href = urlImagem;
         link.click();
     });
+
 }
