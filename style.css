@@ -29,7 +29,7 @@
 @media(max-width:800px) {
 
     label,
-    #label-cupom {
+    #label-cupom, #label-nome{
         display: none;
     }
 }
